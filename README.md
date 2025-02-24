@@ -1,5 +1,5 @@
-# Ethereum Account Generator
-For creating Ethereum Accounts for your Projects.
+# Ethereum Wallet Generator
+For creating Ethereum Wallets for your Projects.
 
 ## Highlights
 - Generate Private Key, Public Key & Ethereum Address
