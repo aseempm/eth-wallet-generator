@@ -1,6 +1,6 @@
 {
   "name": "@aseempm/eth-wallet-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to generate Ethereum wallets",
   "main": "cli.js",
   "bin": {
@@ -13,7 +13,10 @@
   "scripts": {
     "start": "node cli.js"
   },
-  "keywords": ["ethereum", "wallet generator"],
+  "keywords": [
+    "ethereum",
+    "wallet generator"
+  ],
   "author": "Aseem PM",
   "license": "ISC",
   "dependencies": {
