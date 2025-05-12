@@ -1,13 +1,17 @@
 {
-  "name": "account-generator",
+  "name": "@aseempm/eth-wallet-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aseempm/eth-wallet-generator.git"
+  },
   "scripts": {
     "start": "node main.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ethereum", "wallet generator"],
+  "author": "Aseem PM",
   "license": "ISC",
   "dependencies": {
     "ethers": "^6.13.5"
