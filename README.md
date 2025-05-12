@@ -1,10 +1,21 @@
 # Ethereum Wallet Generator
-For creating Ethereum Wallets for your Projects.
 
-## Highlights
-- Generate Private Key, Public Key & Ethereum Address
+A CLI tool to easily generate Ethereum wallets for your projects using `ethers.js`.
 
-## Initializing Project
-1. Clone the project
-2. Install packages `pnpm i --frozen-lockfile`
-3. Run Script `pnpm start`
+---
+
+## ✨ Highlights
+
+- Generates a new Ethereum wallet (Private Key, Public Key, Address)
+- Saves wallet details to a JSON file with a user-defined purpose
+- No installation needed — use directly with `npx`
+
+---
+
+## 🚀 Quick Usage
+
+You can use the tool instantly with:
+
+```bash
+npx @aseempm/eth-wallet-generator
+```
