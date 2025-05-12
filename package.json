@@ -1,14 +1,17 @@
 {
   "name": "@aseempm/eth-wallet-generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CLI to generate Ethereum wallets",
+  "main": "cli.js",
+  "bin": {
+    "eth-wallet-generator": "./cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aseempm/eth-wallet-generator.git"
   },
   "scripts": {
-    "start": "node main.js"
+    "start": "node cli.js"
   },
   "keywords": ["ethereum", "wallet generator"],
   "author": "Aseem PM",
