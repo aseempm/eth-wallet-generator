@@ -1,6 +1,7 @@
 const { Wallet } = require('ethers');
 const fs = require('fs');
 const readline = require('readline');
+const path = require('path');
 
 // Create a readline interface
 const rl = readline.createInterface({
@@ -16,7 +17,6 @@ const address = wallet.address;
 
 // Ask the user for the purpose of the wallet
 rl.question("What is the purpose of creating this wallet? ", (purpose) => {
-  // Create a JSON object to store the wallet details
   const walletData = {
     purpose: purpose,
     privateKey: privateKey,
@@ -24,15 +24,18 @@ rl.question("What is the purpose of creating this wallet? ", (purpose) => {
     address: address,
   };
 
-  // Save the wallet data to a file
+  // Use process.cwd() to save in the calling directory
   const fileName = `wallet_${purpose}_${Date.now()}.json`;
-  fs.writeFile(`wallets/${fileName}`, JSON.stringify(walletData, null, 2), (err) => {
+  const dir = path.join(process.cwd(), 'wallets');
+
+  fs.mkdirSync(dir, { recursive: true });
+
+  fs.writeFile(path.join(dir, fileName), JSON.stringify(walletData, null, 2), (err) => {
     if (err) {
       console.error("Error saving the wallet file:", err);
     } else {
-      console.log(`Wallet details saved to ${fileName}`);
+      console.log(`Wallet details saved to wallets/${fileName}`);
     }
-    // Close the readline interface
     rl.close();
   });
 });
