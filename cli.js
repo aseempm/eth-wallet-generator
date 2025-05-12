@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { Wallet } = require('ethers');
 const fs = require('fs');
 const readline = require('readline');
